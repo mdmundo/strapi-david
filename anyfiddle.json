@@ -1,0 +1,4 @@
+{
+  "defaultCommand": "yarn develop",
+  "port": 1337
+}
