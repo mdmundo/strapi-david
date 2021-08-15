@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "debts",
+  "info": {
+    "name": "Debt",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "member": {
+      "model": "member",
+      "via": "debts"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "paid": {
+      "type": "boolean"
+    },
+    "date": {
+      "type": "date"
+    },
+    "ref": {
+      "type": "date"
+    },
+    "record": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

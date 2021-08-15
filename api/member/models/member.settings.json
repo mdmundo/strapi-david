@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "name": "Member",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cnpj": {
+      "type": "string",
+      "unique": false
+    },
+    "cpf": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "cpf",
+        "cnpj"
+      ],
+      "required": false
+    },
+    "ie": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "rs": {
+      "type": "string"
+    },
+    "fantasy": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "branch": {
+      "type": "string"
+    },
+    "taxing": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "postal": {
+      "type": "string"
+    },
+    "since": {
+      "type": "date"
+    },
+    "member": {
+      "type": "date"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "AC",
+        "AL",
+        "AP",
+        "AM",
+        "BA",
+        "CE",
+        "ES",
+        "GO",
+        "MA",
+        "MT",
+        "MS",
+        "MG",
+        "PA",
+        "PB",
+        "PR",
+        "PE",
+        "PI",
+        "RJ",
+        "RN",
+        "RS",
+        "RO",
+        "RR",
+        "SC",
+        "SP",
+        "SE",
+        "TO"
+      ]
+    },
+    "debts": {
+      "via": "member",
+      "collection": "debt"
+    }
+  }
+}
