@@ -95,9 +95,9 @@
         "TO"
       ]
     },
-    "debts": {
+    "debt": {
       "via": "member",
-      "collection": "debt"
+      "model": "debt"
     }
   }
 }

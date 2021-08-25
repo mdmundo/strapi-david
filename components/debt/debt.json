@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_debt_debts",
+  "info": {
+    "name": "Debt",
+    "icon": "hand-holding-usd"
+  },
+  "options": {},
+  "attributes": {
+    "amount": {
+      "type": "integer"
+    },
+    "paid": {
+      "type": "boolean",
+      "default": false
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "ref": {
+      "type": "date"
+    },
+    "record": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
