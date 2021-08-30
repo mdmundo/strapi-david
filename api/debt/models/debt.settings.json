@@ -14,7 +14,7 @@
   "attributes": {
     "member": {
       "model": "member",
-      "via": "debt"
+      "via": "debts"
     },
     "debts": {
       "type": "component",
