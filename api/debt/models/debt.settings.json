@@ -16,7 +16,7 @@
       "model": "member",
       "via": "debts"
     },
-    "debts": {
+    "installments": {
       "type": "component",
       "repeatable": true,
       "component": "debt.debt"
